@@ -8,11 +8,17 @@ console.log(eta);
 // il prezzo del biglietto è definito in base ai km (0.21 € al km)
 var prezzo = km * prezzoKm;
 console.log( prezzo);
+document.getElementById("prezzo1").innerHTML += " " + prezzo.toFixed(2) + "€"
+
 // va applicato uno sconto del 20% per i minorenni
 if ( eta < 18 ){
    prezzo -= (prezzo * 20) / 100 
+    document.getElementById("sconto").innerHTML += " Lo sconto sarebbe del 20%  Ma tua madre ci ha chiamato e TI PROIBISCE DI PARTIRE "
+
 } else if (eta >= 65){
     prezzo -= (prezzo * 40) / 100 
+    document.getElementById("sconto").innerHTML = " Siccome hai più di 65 anni e non capisci un cazzo lo sconto è del  40% "
+
 }
 console.log (prezzo.toFixed(2));
 document.getElementById("totale").innerHTML = " " + prezzo.toFixed(2) + "€"
