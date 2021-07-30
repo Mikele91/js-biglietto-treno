@@ -17,7 +17,7 @@ if ( eta < 18 ){
 
 } else if (eta >= 65){
     prezzo -= (prezzo * 40) / 100 
-    document.getElementById("sconto").innerHTML = " Siccome hai più di 65 anni e non capisci un cazzo lo sconto è del  40% "
+    document.getElementById("sconto").innerHTML = " Hai più di 65 anni lo sconto è del  40% ma noi ti consigliamo di stare a casa!!!"
 
 }
 console.log (prezzo.toFixed(2));
